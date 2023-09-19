@@ -1,0 +1,189 @@
+/* Reset some default styles for better consistency */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header and navigation bar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    border-bottom: 4px solid #f8f9fa; /* Light gray border at the bottom */
+    padding: 10px 0; /* Padding at the top and bottom */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Bold brand text */
+}
+
+.navbar-nav li.nav-item {
+    margin-right: 10px; /* Spacing between nav items */
+}
+
+/* Links in the navigation bar */
+.navbar-nav li.nav-item a.nav-link {
+    color: #fff; /* Text color for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #f8f9fa; /* Text color on hover */
+    background-color: transparent; /* Remove background on hover */
+}
+
+/* Main content area */
+.container-fluid {
+    margin-top: 20px; /* Space at the top */
+}
+
+/* Pagination links */
+.pagination {
+    margin-top: 20px; /* Space above pagination */
+}
+
+.page-links a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+
+.page-current {
+    font-weight: bold;
+    margin: 0 10px; /* Spacing around page number */
+}
+
+/* Background color for the body */
+body {
+    background-color: #f8f9fa; /* Light gray background color */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #343a40; /* Dark text color for headings */
+}
+
+/* Paragraph text */
+p {
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* Text color on buttons */
+    padding: 10px 20px; /* Padding on buttons */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Form elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border: 1px solid #ccc; /* Add a border to form fields */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Form submit buttons */
+input[type="submit"] {
+    background-color: #28a745; /* Green button background color */
+    color: #fff; /* Text color on buttons */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 3px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Dark header background color for thead */
+th {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+/* Style alerts (success, error, etc.) */
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light green background for success messages */
+    color: #155724; /* Dark text color for success messages */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Light red background for error messages */
+    color: #721c24; /* Dark text color for error messages */
+}
+
+/* Links */
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #007bff; /* Default link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Link color on hover */
+}
+
+/* Button variants */
+.btn-primary {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* Text color on buttons */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gray button background color */
+    color: #fff; /* Text color on buttons */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red button background color */
+    color: #fff; /* Text color on buttons */
+}
+
+/* Add this CSS to control the image size */
+.navbar-image {
+    max-width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing to the right of the image */
+}
+
+/* Add custom styles for your specific content as needed */
+/* Example: */
+/*
+.special-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+*/
+
+/* Add more custom styles as needed */

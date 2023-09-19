@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-3">Local Library - Book List</h1>
+    <div class="row">
+        <div class="col-sm-12">
+            {% if book_list %}
+                <ul class="list-group">
+                    {% for book in book_list %}
+                        <li class="list-group-item">
+                            <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
+                            <span class="badge badge-secondary">{{ book.author }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="mt-3">There are no books in the library.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+/* Apply styles to the navigation bar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+}
+
+/* Apply styles to the user-related links */
+.navbar-text {
+    color: #ffffff;
+    margin-right: 10px; /* Add some space between User and Staff */
+}
+
+/* Apply styles to the content area */
+.container-fluid {
+    padding-top: 20px;
+}
+
+/* Apply styles to the pagination section */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.page-current {
+    font-weight: bold;
+}

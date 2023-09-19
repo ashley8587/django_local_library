@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-3">Local Library - Author List</h1>
+    {% if author_list %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Date of Birth</th>
+                    <th>Date of Death</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for author in author_list %}
+                    <tr>
+                        <td>
+                            <a href="{{ author.get_absolute_url }}">
+                                {{ author }}
+                            </a>
+                        </td>
+                        <td>{{ author.date_of_birth }}</td>
+                        <td>{% if author.date_of_death %}{{ author.date_of_death }}{% endif %}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>There are no authors in the library.</p>
+    {% endif %}
+</div>
+{% endblock %}
