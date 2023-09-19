@@ -1,0 +1,49 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="mt-3">Welcome to My Local Library!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 center">
+                <p>The library has the following record counts:</p>
+                <table class="table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Books</strong></td>
+                        <td>{{ num_books }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copies</strong></td>
+                        <td>{{ num_instances }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copies available</strong></td>
+                        <td>{{ num_instances_available }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Authors</strong></td>
+                        <td>{{ num_authors }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Your Visits</h2>
+                <p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
